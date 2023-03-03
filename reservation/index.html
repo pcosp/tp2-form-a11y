@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Réservation | Auberge du jacana africain</title>
 
@@ -23,29 +24,169 @@
     <main>
         <h1>Réservation</h1>
         <form id="reservation-form" action="reservation.html">
+            <fieldset class="form-section disponibilite">
+                <legend>
+                    <h2>1. Vérifier la disponibilité</h2>
+                </legend>
+                <div class="disponibilite__dates">
+                        <legend>
+                            <h3>Date d'arrivée&#8239;:</h3>
+                        </legend>
+                        <div class="disponibilite__date">
+                            <p>
+                                <select id="jour-arrivee" name="jour-arrivee" required="required">
+                                    <option label ="jour" ></option>
+                                    <!-- option[value=$]{$}*31 -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <!-- <input type="number" id="jour-arrivee" name="jour-arrivee" min="1" max="31" required="required">  -->
+                            </p>
+
+                            <p>
+                                <select id="mois-arrivee" name="mois-arrivee" required="required">
+                                    <option label="mois"></option>
+                                    <!-- option[value=janvier]{janvier}*12 -->
+                                    <option value="janvier">janvier</option>
+                                    <option value="février">février</option>
+                                    <option value="mars">mars</option> >
+                                    <option value="avril">avril</option>
+                                </select>
+                                <!-- <input type="number" id="mois-arrivee" name="mois-arrivee" min="1" max="12" required="required"> -->
+                            </p>
+
+                            <p>
+                                <select id="annee-arrivee" name="annee-arrivee" required="required">
+                                    <option label="année"></option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <!-- <input type="number" id="annee-arrivee" name="annee-arrivee" min="2023" max="2024" required="required">  -->
+                            </p>
+                        </div>
+                    
+                        <legend>
+                            <h3>Date de départ&#8239;:</h3>
+                        </legend>
+                        <div class="disponibilite__date">
+                            <p>
+                                <select id="jour-depart" name="jour-depart" required="required">
+                                    <option label="jour"></option>
+                                    <!-- option[value=$]{$}*31 -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <!-- <input type="number" id="jour-depart" name="jour-depart" min="1" max="31" required="required">  -->
+                            </p>
+
+                            <p>
+                                <select id="mois-depart" name="mois-depart" required="required">
+                                    <option label="mois"></option>
+                                    <!-- option[value=janvier]{janvier}*12 -->
+                                    <option value="janvier">janvier</option>
+                                    <option value="février">février</option>
+                                    <option value="mars">mars</option> >
+                                    <option value="avril">avril</option>
+                                </select>
+                                <!-- <input type="number" id="mois-depart" name="mois-depart" min="1" max="12" required="required">  -->
+                            </p>
+
+                            <p>
+                                <select id="annee-depart" name="annee-depart" required="required">
+                                    <option label="année"></option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <!-- <input type="number" id="annee-depart" name="annee-depart" min="2023" max="2024" required="required">  -->
+                            </p>
+                        </div>
+                    
+                </fieldset>
+                </div>
+
             <div class="form-section">
                 <fieldset>
-                    <legend>Vérifier la disponibilité</legend>
-                <label for="date-arrivee">Date d'arrivée :</label>
-                <input type="date" id="date-arrivee" name="date-arrivee"><br>
-
-                <label for="date-depart">Date de départ :</label>
-                <input type="date" id="date-depart" name="date-depart"><br>
-
-                <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
-                <p id="availability-message"></p>
-            </fieldset>
-                
-            </div>
-
-            <div class="form-section">
-                <fieldset>
-                    <legend>Nombre de personnes</legend>
-                <label>Adultes (maximum 4):</label>
-                <input id="adultes" name="adultes"><br>
-
-                <label>Enfants (maximum 5):</label>
-                <input id="enfants" name="enfants"><br>
+                    <legend><h2>Nombre de personnes</h2></legend>
+                <p>
+                    <label>Adultes (maximum 4):</label>
+                    <input id="adultes" name="adultes" required="required" maxlength="1">
+                </p>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
+                <p>
+                 <label>Enfants (maximum 5):</label>
+                <input id="enfants" name="enfants" required="required" maxlength="1">   
+                </p>
+                <p class="erreur">
+                    <span>
+                        <span class="screen-reader-only">Avertissement</span>
+                        <span class="icone icone--erreur" aria-hidden="true"></span>
+                    </span>
+                    Message d'erreur par JavaScript
+                </p>
              <p>
                     Notes: <br>
                     1. la chambre familiale peut loger jusqu'à 6 personnes<br>
@@ -58,37 +199,43 @@
             </div>
 
             <div class="form-section">
-                <fieldset>
-                    <legend>Choix de chambre et forfait</legend>
-                    
-                    <input type="radio" id="simple" name="chambre" value="simple">
-                    <label for="simple">
-                        <img src="images/types-de-chambre/1-lit-double.webp" alt="Lit simple" class="screen-reader-only">
-                    </label>
-
-                    <input type="radio" id="double" name="chambre" value="double" class="screen-reader-only">
-                    <label for="double">
-                        <img src="images/types-de-chambre/2-lits-doubles.jpg" alt="Lit double">
-                    </label>
-
-                    <input type="radio" id="familiale" name="chambre" value="familiale" class="screen-reader-only"/>
-                    <label for="familiale">
-                        <img src="images/types-de-chambre/chambre-familiale.jpg" alt="chambre familiale">
-                    </label>
-
-                    <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
-                    12.50$
-                    CAN.</p>
-
-                    <input type="checkbox" id="dejeuner" name="dejeuner">
-                    <label for="scales">Inclure le petit déjeuner</label>
+                <fieldset class="ctnValidation">
+                    <legend>
+                        <h2>Choix de chambre et forfait</h2>
+                    </legend>
+                    <ul class="rangee">
+                        <li>
+                            <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only" required>
+                            <label for="simple">
+                                <img src="images/types-de-chambre/1-lit-double.webp" alt="">
+                                <span class="produit">Chambre simple</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="chambre" id="double" value="double" class="screen-reader-only">
+                            <label for="double">
+                                <img src="images/types-de-chambre/2-lits-double.jpg" alt="">
+                                <span class="produit">Lit double</span>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
+                            <label for="familiale">
+                                <img src="images/types-de-chambre/chambre-familiale.jpg" alt="">
+                                <span class="produit">Familiale</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <p class="erreur">
+                        <span>
+                            <span class="screen-reader-only">Avertissement</span>
+                            <span class="icone icone--erreur" aria-hidden="true"></span>
+                        </span>
+                        Message d'erreur par JavaScript
+                    </p>
                 </fieldset>
-
-                <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
-                Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
-
-                <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
-
+<input type="checkbox" id="dejeuner" name="dejeuner" required="required">
+                    <label for="scales">Inclure le petit déjeuner</label>
             </div>
 
             <div class="form-section">
@@ -96,17 +243,53 @@
                     <legend>
                         <h2>Identification</h2>
                     </legend>
-                <label>Prénom :</label>
-                <input id="prenom" name="prenom"><br>
+                    <p>
+                        <label>Prénom :</label>
+                        <input id="prenom" name="prenom" required="required" minlength="2" pattern="[a-zA-ZÀ-ÿ \-]+">
+                    </p>
+                    <p class="erreur">
+                        <span>
+                            <span class="screen-reader-only">Avertissement</span>
+                            <span class="icone icone--erreur" aria-hidden="true"></span>
+                        </span>
+                        Message d'erreur par JavaScript
+                    </p>
+                
+                    <p>
+                      <label>Nom :</label>
+                      <input id="nom" name="nom" required="required" minlength="2" pattern="[a-zA-ZÀ-ÿ \-]+">  
+                    </p>
+                    <p class="erreur">
+                        <span>
+                            <span class="screen-reader-only">Avertissement</span>
+                            <span class="icone icone--erreur" aria-hidden="true"></span>
+                        </span>
+                        Message d'erreur par JavaScript
+                    </p>
 
-                <label>Nom :</label>
-                <input id="nom" name="nom"><br>
+                    <p>
+                     <label>Email :</label>
+                     <input id="email" name="email" required="required">   
+                    </p>
+                    <p class="erreur">
+                        <span>
+                            <span class="screen-reader-only">Avertissement</span>
+                            <span class="icone icone--erreur" aria-hidden="true"></span>
+                        </span>
+                        Message d'erreur par JavaScript
+                    </p>
 
-                <label>Email :</label>
-                <input id="email" name="email"><br>
-
-                <label>Téléphone :</label>
-                <input id="telephone" name="telephone"><br>
+                    <p>
+                      <label>Téléphone :</label>
+                      <input id="telephone" name="telephone" required="required">  
+                    </p>
+                    <p class="erreur">
+                        <span>
+                            <span class="screen-reader-only">Avertissement</span>
+                            <span class="icone icone--erreur" aria-hidden="true"></span>
+                        </span>
+                        Message d'erreur par JavaScript
+                    </p>
                 </fieldset>
                 
 
