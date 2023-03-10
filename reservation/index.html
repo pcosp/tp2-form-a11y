@@ -46,8 +46,9 @@
     </header>
 
     <main>
-        <h1>Réservation</h1>
+        
         <form id="reservation-form" action="reservation.html">
+            <h1>Réservation</h1>
             <fieldset class="form-section disponibilite">
                 <legend>
                     <h2>1. Vérifier la disponibilité</h2>
@@ -227,31 +228,38 @@
                     <legend>
                         <h2>Choix de chambre et forfait</h2>
                     </legend>
-                    <ul class="rangee">
-                        <li>
-                            <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only" required>
+                    <ul class="row">
+                        <li class="forfait__li">
+                            <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only"
+                                required>
                             <label for="simple">
                                 <img src="../images/types-de-chambre/1-lit-double.webp" alt="">
-                                <span class="produit">Chambre simple</span>
+                                <span class="produit">Simple <span class="prix">100$</span></span>
+
                             </label>
                         </li>
-                        <li>
-                            <input type="radio" name="chambre" id="double" value="double" class="screen-reader-only">
+                        <li class="forfait__li">
+                            <input type="radio" name="chambre" id="double" value="double"
+                                class="screen-reader-only">
                             <label for="double">
                                 <img src="../images/types-de-chambre/2-lits-double.webp" alt="">
-                                <span class="produit">Lit double</span>
+                                <span class="produit">Double <span class="prix">150$</span></span>
                             </label>
                         </li>
-                        <li>
-                            <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
+                        <li class="forfait__li">
+                            <input type="radio" name="chambre" id="familiale" value="familiale"
+                                class="screen-reader-only">
                             <label for="familiale">
                                 <img src="../images/types-de-chambre/chambre-familiale.webp" alt="">
-                                <span class="produit">Familiale</span>
+                                <span class="produit">Familiale <span class="prix">200$</span></span>
                             </label>
                         </li>
                     </ul>
-                    <input type="checkbox" id="dejeuner" name="dejeuner" required="required">
-                    <label for="scales">Inclure le petit déjeuner</label>
+                    <div class="case-cocher">
+                        <input type="checkbox" id="dejeuner" name="dejeuner" required="required">
+                        <label for="scales">Inclure le petit déjeuner</label>
+                    </div>
+                    
                     <p class="erreur">
                         <span>
                             <span class="screen-reader-only">Avertissement</span>
@@ -319,13 +327,11 @@
 
             </div>
 
-            <p><button type="submit">Confirmer la réservation</button></p>
+            <p><button class="bouton" type="submit">Confirmer la réservation</button></p>
         </form>
-    </main>
-    <hr>
-    <aside>
+        <aside>
         <h2>Nous joindre</h2>
-        <h3>aubergedujacana@gmail.com</h3>
+        <h3>aubergedujacana@gmail.com<h3>
         <p>
             Pour toutes demandes d’information, ou pour faire une demande de réservation pour l’un de nos chalets,
             remplisser le formulaire ci-contre.
@@ -335,11 +341,14 @@
 
         </p>
     </aside>
+    </main>
+    <hr>
+    
     <footer>
         <!-- Intégrer les medias sociaux instagram et facebook + un bouton pour partager cette page -->
         <p>
             Ce site Web est un projet pédagogique réalisé par
-            <a href="">Perle Costedoat</a> et <a href="">Prénom et Nom</a> dans le cadre du cours 582-204-SF Intégration
+            <a href="">Perle Costedoat</a>  dans le cadre du cours 582-204-SF Intégration
             II,
             programme des <a href="">Techniques d'intégration multimédia</a>,
             <a href="">Cégep de Sainte-Foy</a>.

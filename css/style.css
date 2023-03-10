@@ -10,12 +10,18 @@
 @import url(menu.css/menu.css);
 
 
+@media (min-width:600px){
+    form{
+    margin-left: 200px;
+}
+}
 
 
 header,
 footer {
     background-color: lightblue;
     margin: -1.5rem -2rem;
+    margin-left: 0px;
     padding: 2rem 2rem;
 }
 
@@ -24,6 +30,7 @@ footer {
     header,
     footer {
         padding: 4rem;
+        width: 100%;
     }
 }
 .signature{
@@ -37,13 +44,137 @@ footer {
     color: black;
     font-family: 'Gloock', serif;
 }
+h1{
+    font-family: 'Gloock', serif;
+}
+h3{
+    font-size: 150%;
+}
 p{
     font-family: 'Gloock', serif;
+}
+/*DATES*/
+.disponibilite__date{
+    font-size: 1em;
+    padding: 1em;
+
+}
+
+#jour-arrivee{
+    padding-bottom: 0;
 }
 
 
 
-.rangee{
-    list-style-type: none;
-    align-items: row;
+
+
+/*CHAMBRES*/
+
+.prix {
+    display: block;
+}
+
+.forfait img {
+    width: 100%;
+}
+
+.row{
+    list-style: none;
+}
+.forfait .row {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .forfait .row {
+        display: flex;
+    }
+}
+
+.forfait__li {
+    flex-basis: 33%;
+    margin: 0.25rem;
+}
+
+.forfait__li img {
+    filter:opacity(50%);
+}
+
+.forfait__li [type="radio"]+label {
+    display: block;
+    padding: 1rem;
+}
+
+.forfait__li [type="radio"]:focus+label,
+.forfait__li [type="radio"]:checked+label {
+    background-color: var(--couleur-form);
+    font-weight: bold;
+}
+
+.forfait__li [type="radio"]:focus+label img,
+.forfait__li [type="radio"]:checked+label img,
+.forfait__li [type="radio"]:hover+label img {
+    filter: none;
+}
+
+/*ERREURS*/
+
+.erreur {
+    display: none; 
+}
+
+.icone {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background-image: url("../images/icones/good-warning-error.png");
+    background-size: cover;
+    position: relative;
+    top: 5px;
+}
+
+.icone--ok {
+    background-position: 0 0;
+}
+
+.icone--avertissement {
+    background-position: 49px 0;
+}
+
+.icone--erreur {
+    background-position: 101px 0;
+}
+
+/*ASIDE*/
+aside{
+    background-color: lightyellow;
+    margin: -1.5rem -2rem;
+    margin-left: 0px;
+    padding: 2rem 2rem;
+    
+}
+aside p{
+    font-size: 0.7em;
+}
+@media (min-width: 600px){
+    aside{
+        position: absolute;
+        top: 0px;
+        height: 304%;
+        width: 200px;
+        display: block;
+        flex-direction: column;
+        background-color: lightyellow;
+        padding-left: 1em;
+        margin-top: 250px;
+        
+    }
+    aside p{
+        font-size: 16px;
+    }
+    aside h3{
+        font-size: small;
+    }
 }
