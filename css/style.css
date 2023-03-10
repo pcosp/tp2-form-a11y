@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto+Slab:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+@import url(normalize.css);
+@import url(utilitaires.css);
+@import url(typo.css);
+@import url(grille.css);
+@import url(menu.css/menu.css);
+
+
+
+
+header,
+footer {
+    background-color: lightblue;
+    margin: -1.5rem -2rem;
+    padding: 2rem 2rem;
+}
+
+@media (min-width:600px) {
+
+    header,
+    footer {
+        padding: 4rem;
+    }
+}
+.signature{
+   text-align: center;
+}
+.signature__logo{
+    width: 100px;
+
+}
+.signature__span{
+    color: black;
+    font-family: 'Gloock', serif;
+}
+p{
+    font-family: 'Gloock', serif;
+}
+
+
+
+.rangee{
+    list-style-type: none;
+    align-items: row;
+}

@@ -3,12 +3,14 @@
 
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    --couleur-texte: #022b50;
+    --couleur-texte:  black;
     --couleur-titres-h1-h3: darkmagenta;
     --couleur-dominante: darkmagenta;
     --couleur-secondaire: #418cff;
     --bg-couleur-contraste:#efefef;
     --box-shadow:5px 5px 5px;
+    --nav-border-color: white;
+    
 }
 
 /*** Clearfix ***/

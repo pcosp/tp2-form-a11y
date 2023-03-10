@@ -13,12 +13,36 @@
 
 <body>
     <header>
-        <a href="../index.html" aria-label="Aller à la page d'accueil">
-            <p><img src="../images/logo-jacana.png" alt=""></p>
-            <p class="titre">Auberge du jacana africain</p>
+        <a href="../index.html" class="signature">
+            <img src="../images/logo-jacana.png" alt="" class="signature__logo">
+            <span class="signature__span">Auberge </span>
+            <span class="signature__span">du </span>
+            <span class="signature__span">jacana </span>
+            <span class="signature__span">africain</span>
+            
         </a>
-        <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
-        <p> <a href="../index.html" aria-label="Retourner à la page d'accueil">accueil</a> | <a href="index.html">réservation</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="../index.html" class="nav__link">Accueil</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__link">Historique</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="index.html" class="nav__link">Région</a>
+                </li>
+                <!-- remarquer que .nav__link--active est le modificateur de .nav__link
+            pour mettre en valeur l'item de menu courant -->
+                <li class="nav__list-item">
+                    <a href="#" class="nav__link nav__link--active">Réservation</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
 
     <main>
@@ -207,25 +231,27 @@
                         <li>
                             <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only" required>
                             <label for="simple">
-                                <img src="images/types-de-chambre/1-lit-double.webp" alt="">
+                                <img src="../images/types-de-chambre/1-lit-double.webp" alt="">
                                 <span class="produit">Chambre simple</span>
                             </label>
                         </li>
                         <li>
                             <input type="radio" name="chambre" id="double" value="double" class="screen-reader-only">
                             <label for="double">
-                                <img src="images/types-de-chambre/2-lits-double.jpg" alt="">
+                                <img src="../images/types-de-chambre/2-lits-double.webp" alt="">
                                 <span class="produit">Lit double</span>
                             </label>
                         </li>
                         <li>
                             <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
                             <label for="familiale">
-                                <img src="images/types-de-chambre/chambre-familiale.jpg" alt="">
+                                <img src="../images/types-de-chambre/chambre-familiale.webp" alt="">
                                 <span class="produit">Familiale</span>
                             </label>
                         </li>
                     </ul>
+                    <input type="checkbox" id="dejeuner" name="dejeuner" required="required">
+                    <label for="scales">Inclure le petit déjeuner</label>
                     <p class="erreur">
                         <span>
                             <span class="screen-reader-only">Avertissement</span>
@@ -234,8 +260,6 @@
                         Message d'erreur par JavaScript
                     </p>
                 </fieldset>
-<input type="checkbox" id="dejeuner" name="dejeuner" required="required">
-                    <label for="scales">Inclure le petit déjeuner</label>
             </div>
 
             <div class="form-section">
@@ -321,6 +345,7 @@
             <a href="">Cégep de Sainte-Foy</a>.
         </p>
     </footer>
+    <script src="../js/menu.js"></script>
 </body>
 
 </html>
